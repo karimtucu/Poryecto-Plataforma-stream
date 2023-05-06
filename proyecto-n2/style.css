@@ -1,27 +1,90 @@
-body {
-  background-color: #141414;
-  color: #ffffff;
+:root{
+--rojo:#db0000;
+--negro:#000000;
+--blanco:#ffffffff;
+--marron:#564d4d;
+--bordo:#831010
 }
-
-.navbar {
-  padding: 1rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+body{
+  background: var(--negro)
 }
-
-.navbar-nav .nav-link {
-  color: #ffffff;
-  margin-left: 1rem;
-}
-
 .container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+}
+header{
+  padding: 30px;
+}
+header .container{
+display: flex;
+justify-content: space-between;
+}
+header nav a{
+color: #aaa;
+text-decoration: none;
+margin-right: 20px;
+}
+header nav a:hover{
+color: var(--blanco);
+}
+/*-----------contenido(portada)-----*/
+.portada-principal{
+  font-size: 16px;
+  min-height: 48.62em;
+  color: var(--blanco);
+  background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0,0,0, .50) 100%), url(./RecursosDeImagenes-PaginaPrincipal/portada-de-pagina-principal.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
+}
+.portada-principal .container{
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+.portada-principal .titulo{
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4;
+}
+.portada-principal .descripcion{
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+.portada-principal .boton{
+  background: rgba(0,0,0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: var(--blanco);
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
+} 
+.portada-principal .boton:hover{
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+.portada-principal .boton span{
+  margin-right: 1.25em;
+}
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer {
-  padding: 1rem;
+.botones-container {
+  display: flex;
+  align-items: center;
 }
