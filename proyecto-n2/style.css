@@ -1,90 +1,156 @@
 :root{
---rojo:#db0000;
---negro:#000000;
---blanco:#ffffffff;
---marron:#564d4d;
---bordo:#831010
-}
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  background: var(--negro)
-}
-.container {
-  width: 90%;
-  margin: auto;
-}
-header{
-  padding: 30px;
-}
-header .container{
-display: flex;
-justify-content: space-between;
-}
-header nav a{
-color: #aaa;
-text-decoration: none;
-margin-right: 20px;
-}
-header nav a:hover{
-color: var(--blanco);
-}
-/*-----------contenido(portada)-----*/
-.portada-principal{
-  font-size: 16px;
-  min-height: 48.62em;
-  color: var(--blanco);
-  background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0,0,0, .50) 100%), url(./RecursosDeImagenes-PaginaPrincipal/portada-de-pagina-principal.jpg);
-  background-position: center center;
-  background-size: cover;
-  margin-bottom: 3.12em;
+  --rojo:#db0000;
+  --negro:#000000;
+  --blanco:#ffffffff;
+  --marron:#564d4d;
+  --bordo:#831010
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: var(--negro)
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  header{
+    padding: 30px;
+  }
+  header .container{
   display: flex;
-  align-items: end;
-}
-.portada-principal .container{
-  margin: 0 auto;
-  margin-bottom: 6.25em;
-}
-.portada-principal .titulo{
-  font-weight: 600;
-  font-size: 3.12em;
-  margin-bottom: 0.4;
-}
-.portada-principal .descripcion{
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1.75em;
-  max-width: 50%;
-  margin-bottom: 1.25em;
-}
-.portada-principal .boton{
-  background: rgba(0,0,0, 0.5);
-  border: none;
-  border-radius: 0.31em;
-  padding: 0.93em 1.87em;
+  justify-content: space-between;
+  }
+  header nav a{
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+  }
+  header nav a:hover{
   color: var(--blanco);
-  margin-right: 1.25em;
-  cursor: pointer;
-  transition: .3s ease all;
-  font-size: 1.12em;
-} 
-.portada-principal .boton:hover{
-  background-color: var(--blanco);
-  color: var(--negro);
-}
-.portada-principal .boton span{
-  margin-right: 1.25em;
-}
-.boton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  }
+  /*-----------contenido(portada)-----*/
+  .portada-principal{
+    font-size: 16px;
+    min-height: 48.62em;
+    color: var(--blanco);
+    background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0,0,0, .50) 100%), url(./RecursosDeImagenes-PaginaPrincipal/portada-de-pagina-principal.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+  }
+  .portada-principal .container{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+  }
+  .portada-principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4;
+  }
+  .portada-principal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+  }
+  .portada-principal .boton{
+    background: rgba(0,0,0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: var(--blanco);
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+  } 
+  .portada-principal .boton:hover{
+    background-color: var(--blanco);
+    color: var(--negro);
+  }
+  .portada-principal .boton span{
+    margin-right: 1.25em;
+  }
+  .boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .botones-container {
+    display: flex;
+    align-items: center;
+  }
+  .contenedor-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .contenedor-titulo-controles h3{
+    color: var(--blanco);
+    font-size: 30px;
+  }
+  .contenedor-titulo-controles .indicadores button{
+    background: var(--blanco);
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+  }
+  .contenedor-titulo-controles .indicadores button:hover,
+  .contenedor-titulo-controles .indicadores button:activo{
+    background: var(--rojo);
+  }
+  .peliculas-recomendadas{
+    margin-top: 70px;
+  }
+  .peliculas-recomendadas .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+  .peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgba(0,0,0,0.3);
+    font-size: 40px;
+    height: 50px;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: var(--blanco);
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;  
+  }
+  .peliculas-recomendadas .contenedor-principal .flecha-izquierda{
+    left: 0;
+  }
 
-.botones-container {
-  display: flex;
-  align-items: center;
-}
+  .peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    right: 0;
+  }
+  .peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+  .peliculas-recomendadas .contenedor-principal .flecha-derecha:hover{
+    background: rgba(0,0,0, .9);
+  }
+  /*caruosel de pelicula recomendada */
+
+  .peliculas-recomendadas .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .peliculas-recomendadas .contenedor-carousel .carousel {
+    display: flex;  
+  }
