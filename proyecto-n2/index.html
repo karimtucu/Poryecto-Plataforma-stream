@@ -9,30 +9,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header class="">
-      <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center">
         <img class="logo" src="./RecursosDeImagenes-PaginaPrincipal/Logo-cinemagic.png" alt="logotipo cinemagic">
         <nav class="nav-center">
-          <a href="#">Inicio</a>
-          <a href="#">Login</a>
-          <a href="#">Registro</a>
-          <a href="#">Mas Reciente</a>
+        <a href="#">Inicio</a>
+        <a href="#">Login</a>
+        <a href="#">Registro</a>
+        <a href="#">Mas Reciente</a>
         </nav>
-      </div>
+    </div>
     </header>
-  <main>
+<main>
     <div class="portada-principal">
-      <div class="container">
+    <div class="container">
         <h3 class="titulo">Ant-Man y la Avispa: Quantumanía</h3>
         <p class="descripcion">La pareja de superhéroes Scott Lang y Hope van Dyne regresa para continuar sus aventuras como Ant-Man y la Avispa. Los dos, junto a los padres de Hope, Hank Pym y Janet van Dyne y la hija de Scott, Cassie Lang, se dedican a explorar el Mundo Cuántico, interactuando con nuevas y extrañas criaturas y embarcándose en una aventura que les llevará más allá de los límites de lo que creían posible.</p>
-      <div class="botones-container"> 
+    <div class="botones-container"> 
         <button class="boton"> <span class="material-symbols-outlined">play_circle</span>Reproduciar</button>
-        <button class="boton"><span class="material-symbols-outlined">info</span>Mas informacion</button>
-      </div>
-      </div>
+        <!----modal-->
+        <button  id="open" class="boton"><span class="material-symbols-outlined">info</span>Mas informacion</button>
+        <div id="modal_container" class="modal-container">
+        <div class="modal-1">
+        <div class="video-responsive">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BaLJ044I2HI" title="Ant-Man y la Avispa: Quantumanía de Marvel Studios | Tráiler Oficial en español | HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="close" class="boton-close">x</button>
+		</div>
+			</div>
+		</section>
+	</div>
+		<!----modal-->
     </div>
+    </div>
+    </div>
+	<!----carrusel-->
     <div class="peliculas-recomendadas container">
 			<div class="contenedor-titulo-controles">
 				<h3>Películas Recomendadas</h3>
@@ -44,75 +56,84 @@
 				<div class="contenedor-carousel">
 					<div class="carousel">
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png1.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png1.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png2.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png2.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png3.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png3.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png4.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png4.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png5.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png5.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png6.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png6.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png7.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png7.jpg" alt=""></a>
 						</div>
-            <div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png5.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png6.jpg" alt=""></a>
+                        <div class="pelicula">
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png1.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png7.jpg" alt=""></a>
-						</div>
-            <div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png1.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png2.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png2.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png3.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png4.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png5.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png6.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png7.jpg" alt=""></a>
-						</div>
-            <div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png5.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png6.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="/proyecto-n2/RecursosDeImagenes-PaginaPrincipal/png7.jpg" alt=""></a>
+							<a href="#"><img src="./RecursosDeImagenes-PaginaPrincipal/png3.jpg" alt=""></a>
 						</div>
 					</div>
 				</div>
+            <!----carrusel 2--
+			--carrusel 2-->
+
 
 				<button role="button" id="flecha-derecha" class="flecha-derecha"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
 			</div>
 		</div>
-  </main>
-  <script src="./main.js"></script>
+</main>
+<!----footer-->
+<footer>
+	<div class="footer-container">
+		<div class="footer-content-container">
+			<h3 class="website-logo">CineMagic</h3>
+			<span class="footer-info">0800 888 0999</span>
+			<span class="footer-info">CineMagic@gmail.com</span>
+		</div>
+		<div class="footer-menus">
+			<div class="footer-content-container">
+				<span class="menu-title">menu</span>
+				<a href="" class="menu-item-footer">Inicio</a>
+				<a href="" class="menu-item-footer">Registro</a>
+				<a href="" class="menu-item-footer">Cerrar sesión</a>				</a>
+			</div>
+			<div class="footer-content-container">
+				<span class="menu-title">legal</span>
+				<a href="" class="menu-item-footer">Privacy Policy</a>
+				<a href="" class="menu-item-footer">Cookies</a>
+				<a href="" class="menu-item-footer">Legal</a>
+			</div>
+		</div>
+		
+		<div class="footer-content-container">
+			<span class="menu-title">Nuestras Redes</span>
+			<div class="social-container">
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+			</div>
+		</div>
+	</div>
+	<div class="copyright-container">
+		<span class="copyright">Copyright 2023, CineMagic.com Reservados todos los derechos.</span>
+	</div>
+</footer>
+<script src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
