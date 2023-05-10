@@ -9,7 +9,7 @@
     background-color: var(--bordo);
     border-radius: 15px;
     max-width: 500px;
-    min-width: 315px;
+    min-width: 314px;
 }
 .row{
     justify-content: space-around;
