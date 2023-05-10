@@ -25,3 +25,6 @@ h4{
 a{
     text-decoration: none;
 }
+.color-blanco{
+    color: var(--blanco);
+}
