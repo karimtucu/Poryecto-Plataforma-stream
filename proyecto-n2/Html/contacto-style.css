@@ -1,0 +1,27 @@
+:root{
+    --rojo:#db0000;
+    --negro:#000000;
+    --blanco:#ffffffff;
+    --marron:#564d4d;
+    --bordo:#831010
+    }
+.col{
+    background-color: var(--bordo);
+    border-radius: 15px;
+    max-width: 500px;
+    min-width: 315px;
+}
+.row{
+    justify-content: space-around;
+
+}
+.container h3 {
+    font-size: 50px;
+
+}
+h4{
+    font-family: 'Bebas Neue', cursive;
+}
+a{
+    text-decoration: none;
+}
