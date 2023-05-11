@@ -28,3 +28,10 @@ a{
 .color-blanco{
     color: var(--blanco);
 }
+.display-colum{
+    display: flex;
+    flex-direction: column;
+}
+#trucazo{
+    opacity: 0;
+}

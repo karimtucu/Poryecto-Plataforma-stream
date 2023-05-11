@@ -19,43 +19,45 @@
 
 <!-- --NavBar -->
 <header class="">
-    <div class="container d-flex align-items-center">
-        <img class="logo" src="../RecursosDeImagenes-PaginaPrincipal/Logo-cinemagic.png" alt="logotipo cinemagic">
-        <nav class="nav-center">
-        <a href="#">Inicio</a>
-        <a href="#">Login</a>
-        <a href="#">Registro</a>
-        <a href="#">Mas Reciente</a>
-        </nav>
-    </div>
-    </header>
+  <div class="container d-flex align-items-center">
+    <img class="logo" src="../RecursosDeImagenes-PaginaPrincipal/Logo-cinemagic.png" alt="logotipo cinemagic">
+    <nav class="nav-center">
+      <a href="../index.html">Inicio</a>
+      <a href="./peliculas.html">Peliculas</a>
+      <a href="./error404.html">Series</a>
+      <a href="./login.html">Login</a>
+      <a href="./register.html">Registro</a>
+      <a href="./error404.html">Mas Reciente</a>
+    </nav>
+  </div>
+</header>
 <!-- NavBar -->
 <!-- contenido -->
   <div class="container">
     <div class="row">
       <div class="col">
         <h3 class="fw-bold text-center py-5 tamaño-titulo color-blanco">Contactanos</h3>
-        <form action="#">
+
+        <form id="form" action="" class="form">
           <div class="mb-4">
             <label for="email" class="form-label color-blanco"><h4>E-mail</h4></label>
-            <input type="email" class="form-control" placeholder="Ingresa E-mail registrado" name="email" required>
+            <input id="email" type="email" class="form-control" placeholder="Ingresa E-mail registrado" name="email" required>
           </div>
-          <div class="mb-4">
-            <label for="text" class="form-label color-blanco"><h4>Comentario</h4></label>
-            <input type="text" class="form-control" placeholder="Dejanos tu Comentario" name="password"
-              required>
+          <div class="mb-4 display-colum">
+            <label for="message" class="form-label color-blanco"><h4>Comentario</h4></label>
+            <textarea id="message" name="massage" id="" cols="30" rows="10" required></textarea>
           </div>
           <div class="d-grid">
             <button type="submit" class="btn btn-outline-primary rounded-pill">
-              <a href="" class="noAncla color-blanco"><h4>Enviar</h4></a>
+              <h4 class="color-blanco">Enviar</h4>
             </button>
           </div>
           <div class="my-3 color-blanco">
-            <h4><span>¿No tienes cuenta? <a href="#">Registrarte</a></span><br>
+            <h4><span>¿No tienes cuenta? <a href="./register.html">Registrarte</a></span><br>
           </h4>
         </div>
         </form>
-
+      <a href="cinemagic@gmail.com" id="trucazo"></a>
         <div class="container w-100 my-3">
           <div class="row text-center">
             <div class="col-12 color-blanco"><h4>Registrarse con</h4></div>
@@ -108,15 +110,15 @@
             <div class="footer-menus">
                 <div class="footer-content-container">
                     <span class="menu-title">menu</span>
-                    <a href="" class="menu-item-footer">Inicio</a>
-                    <a href="" class="menu-item-footer">Registro</a>
-                    <a href="" class="menu-item-footer">Cerrar sesión</a>				</a>
+                    <a href="../index.html" class="menu-item-footer">Inicio</a>
+                    <a href="./register.html" class="menu-item-footer">Registro</a>
+                    <a href="./contacto.html" class="menu-item-footer">Contactanos</a>
                 </div>
                 <div class="footer-content-container">
                     <span class="menu-title">legal</span>
-                    <a href="" class="menu-item-footer">Privacy Policy</a>
-                    <a href="" class="menu-item-footer">Cookies</a>
-                    <a href="" class="menu-item-footer">Legal</a>
+                    <a href="./error404.html" class="menu-item-footer">Privacy Policy</a>
+                    <a href="./error404.html" class="menu-item-footer">Cookies</a>
+                    <a href="./error404.html" class="menu-item-footer">Legal</a>
                 </div>
             </div>
             
@@ -219,7 +221,7 @@
           </div>
         </div>
       </div>
-
+<script src="../main.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CineMagic</title>
+    <link rel="icon" href="../RecursosDeImagenes-PaginaPrincipal/Logo-cinemagic.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <header class="">
+		<div class="container d-flex align-items-center">
+			<img class="logo" src="../RecursosDeImagenes-PaginaPrincipal/Logo-cinemagic.png" alt="logotipo cinemagic">
+			<nav class="nav-center">
+				<a href="../index.html">Inicio</a>
+				<a href="./peliculas.html">Peliculas</a>
+				<a href="./error404.html">Series</a>
+				<a href="./login.html">Login</a>
+				<a href="./register.html">Registro</a>
+				<a href="./error404.html">Mas Reciente</a>
+			</nav>
+		</div>
+	</header>
+    <main>
+        <div>
+            <div class="row p-5">
+                <!--- IMAGEN PELICULA --->
+                <div class="col-lg-3 col-sm-12">
+                    <img src="../RecursosDeImagenes-PaginaPrincipal/w1.jpg" class="img-fluid mt-10" alt="..." />
+                </div>
+                <!--- FIN IMAGEN PELICULA --->
+                <div class="col-lg-4 col-sm-12">
+                    <h1 class="text-warning">JOHN WICK 4</h1>
+                    <p class="text-light">
+                        John Wick 4 comienza con el personaje del título (Keanu Reeves) huyendo de nuevo mientras tiene
+                        a
+                        cientos de asesinos pisándole los talones. El villano principal de la serie es el Marqués de
+                        Gramont
+                        (Bill Skarsgård), un líder de la Alta Mesa que sigue aumentando la recompensa por la cabeza de
+                        Wick
+                        mientras también arregla algunos asuntos dentro de la organización, incluyendo la posible
+                        eliminación de
+                        Winston Scott (Ian McShane) y algunas de las decisiones que tomó en el pasado. En esta ocasión
+                        vemos
+                        como Wick se traslada a Japón, donde busca la ayuda del jefe del Osaka Continental, Shimazu
+                        (Hiroyuki
+                        Sanada), y se topa con un asesino ciego de la Alta Mesa llamado Caine (Donnie Yen).
+
+                        Laurence Fishburne vuelve como Bowery King: el jefe de The Soup Kitchen, una red de inteligencia
+                        del
+                        hampa de Nueva York disfrazada de albergue para indigentes, y ayuda a Wick cuando el asesino
+                        necesita un
+                        nuevo traje antibalas o más armas. En el filme también tenemos a Shamier Anderson que da vidaa
+                        un
+                        asesino que parece estar esperando a que el precio por la cabeza de Wick alcance el nivel
+                        adecuado para
+                        cobrar su paga.
+                    </p>
+                </div>
+                <!--- FIN DESCRIPCION PELICULA PELICULA --->
+                <!-- INFORMACION PELICULA --->
+                <div class="col-lg-5 col-sm-12">
+                    <h2 class="text-warning">Informacion</h2>
+                    <p class="badge bg-primary text-wrap">Duracion: 1:25:07</p>
+                    <br />
+                    <p class="badge bg-primary text-wrap">Categoria: Acción</p>
+                    <br />
+                    <p class="badge bg-primary text-wrap">Año: 2023</p>
+                    <br />
+                    <p class="badge bg-primary text-wrap">
+                        Edad Recomendada: <i class="bi bi-plus-circle"></i>13
+                    </p>
+                    <br />
+                    <p class="badge bg-primary text-wrap">
+                        Calidad: <i class="bi bi-badge-hd"></i><br />
+                        <i class="bi bi-badge-4k"></i>
+                    </p>
+                </div>
+                <!-- FIN INFORMACION PELICULA --->
+        <div class="row mt-5">
+            <div class="col">
+                <select class="custom-select custom-select-lg mb-3" id="catalogoVideos">
+                    <option selected value="">Seleccionar Contenido</option>
+                    <option value="https://www.youtube.com/embed/OkC_YaSFBHA">Trailer 4</option>
+                  </select>
+              
+                  <button        
+                    id="botonVentanaModal"            
+                    type="button"
+                    class="btn btn-primary" >
+                    Abrir video
+                  </button>
+              
+                  <div
+                    class="modal fade"
+                    id="ventanaModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="ventanaModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-xl" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="ventanaModalLabel">Video</h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-4by3">
+                            <iframe
+                                id="iframeVideo"
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/lXY0pGYJdaw"                              
+                                allow="autoplay"
+                            ></iframe>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <!----footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="website-logo">CineMagic</h3>
+                <span class="footer-info">0800 888 0999</span>
+                <span class="footer-info">CineMagic@gmail.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="../index.html" class="menu-item-footer">Inicio</a>
+                    <a href="./login.html" class="menu-item-footer">Registro</a>
+                    <a href="./contacto.html" class="menu-item-footer">Contactanos</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="./error404.html" class="menu-item-footer">Privacy Policy</a>
+                    <a href="./error404.html" class="menu-item-footer">Cookies</a>
+                    <a href="./error404.html" class="menu-item-footer">Legal</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="footer-content-container">
+            <span class="menu-title">Nuestras Redes</span>
+            <div class="social-container">
+                <a href="" class="social-link"></a>
+                <a href="" class="social-link"></a>
+                <a href="" class="social-link"></a>
+            </div>
+        </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2023, CineMagic.com Reservados todos los derechos.</span>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            const $botonVentanaModal = $('#botonVentanaModal');
+            const $ventanaModal = $('#ventanaModal');
+            const $selectVideos = $('#catalogoVideos');
+            const $iframeVideo = $('#iframeVideo');
+
+
+            $botonVentanaModal.on('click', function () {
+
+                let videoSrc = $selectVideos.val();
+                if (videoSrc) {
+
+                    $iframeVideo.attr('src', videoSrc + "?autoplay=1");
+
+                    $ventanaModal.modal('show');
+
+
+                }
+                else {
+                    alert('Es necesario seleccionar un video.');
+                }
+
+            });
+
+
+            $ventanaModal.on('hidden.bs.modal', function (event) {
+
+                $iframeVideo.attr('src', null);
+
+            });
+
+        });    
+    </script>
+</body>
+
+</html>

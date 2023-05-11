@@ -47,7 +47,7 @@
     font-size: 16px;
     min-height: 48.62em;
     color: var(--blanco);
-    background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0,0,0, .50) 100%), url(./RecursosDeImagenes-PaginaPrincipal/portada-de-pagina-principal.jpg);
+    background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0,0,0, .50) 100%), url(./RecursosDeImagenes-PaginaPrincipal/portada1.jpg);
     background-position: center center;
     background-size: cover;
     margin-bottom: 3.12em;
@@ -357,6 +357,17 @@
       display: none;
     }
     /*---carrusel 4----*/
+    .peliculas-recomendadas .contenedor-carousel4{
+      overflow: visible;
+    }
+    .peliculas-recomendadas .contenedor-carousel4 .carousel{
+      display: grid;
+      grid-template-columns: repeat(3 , 1fr);
+      gap: 20px;
+    }
+    .peliculas-recomendadas .indicadores4{
+      display: none;
+    }
 
 }
 /*--footer----*/
